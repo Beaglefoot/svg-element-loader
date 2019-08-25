@@ -6,7 +6,6 @@
     "moduleResolution": "node",
     "allowJs": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
     "esModuleInterop": true,
     "baseUrl": "./"
   },
