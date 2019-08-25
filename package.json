@@ -1,0 +1,33 @@
+{
+  "name": "svg-element-loader",
+  "version": "0.0.1",
+  "main": "loader.js",
+  "author": "Beaglefoot <ch-e-st@yandex.ru>",
+  "license": "MIT",
+  "scripts": {
+    "precommit": "lint-staged",
+    "build": "tsc",
+    "lint": "eslint src/**/*.ts"
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.{ts,js}": [
+      "eslint",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.0.0",
+    "@typescript-eslint/parser": "2.0.0",
+    "eslint": "6.2.2",
+    "eslint-config-prettier": "6.1.0",
+    "eslint-plugin-prettier": "3.1.0",
+    "husky": "3.0.4",
+    "lint-staged": "9.2.3",
+    "prettier": "1.18.2",
+    "typescript": "3.5.3"
+  }
+}
