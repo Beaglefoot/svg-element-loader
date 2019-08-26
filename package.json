@@ -1,12 +1,15 @@
 {
   "name": "svg-element-loader",
   "version": "0.1.0",
-  "main": "loader.js",
+  "description": "Load svg images as DOM Elements with webpack",
+  "main": "dist/loader.js",
   "author": "Beaglefoot <ch-e-st@yandex.ru>",
+  "repository": "Beaglefoot/svg-element-loader",
   "license": "MIT",
   "scripts": {
     "precommit": "lint-staged",
     "build": "tsc",
+    "clean": "rm -rf dist/*",
     "lint": "eslint {src,test}/**/*.ts",
     "test": "jest"
   },
@@ -37,5 +40,10 @@
     "ts-jest": "24.0.2",
     "typescript": "3.5.3",
     "webpack": "4.39.2"
-  }
+  },
+  "keywords": [
+    "webpack",
+    "svg",
+    "loader"
+  ]
 }
