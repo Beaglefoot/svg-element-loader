@@ -40,9 +40,13 @@ describe('svg-element-loader', () => {
 
     sourceFile.forEachChild(node => {
       if (node.kind === ts.SyntaxKind.ExportAssignment) {
-        // There has to be a way to traverse better than that...
-        const iife = node.getChildAt(2, sourceFile).getText(sourceFile); // eslint-disable-line
-        svg = eval(iife);
+        let svgElementBuilder: string;
+
+        node.forEachChild(innerNode => {
+          svgElementBuilder = innerNode.getText(sourceFile);
+        });
+
+        svg = eval(svgElementBuilder);
       }
     });
 
