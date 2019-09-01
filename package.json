@@ -1,6 +1,6 @@
 {
   "name": "svg-element-loader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Load svg images as DOM Elements with webpack",
   "main": "dist/loader.js",
   "author": "Beaglefoot <ch-e-st@yandex.ru>",

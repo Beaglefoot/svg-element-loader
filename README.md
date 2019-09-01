@@ -25,6 +25,14 @@ module.export = {
 };
 ```
 
+**tsconfig.json**
+
+```json
+{
+  "include": ["node_modules/svg-element-loader/*.d.ts"]
+}
+```
+
 ## Usage
 
 In JavaScript

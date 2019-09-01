@@ -9,5 +9,5 @@
     "esModuleInterop": true,
     "baseUrl": "./"
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "./*.d.ts"]
 }
